@@ -1,0 +1,11 @@
+# runtime noise
+*.log
+nohup.out
+
+# wallet material — never commit
+session.json
+.baw/
+.baw-wallets/
+*.pem
+.env
+.env.*

@@ -1,0 +1,18 @@
+{
+  "name": "Burn",
+  "token": "0x7de1606230aa70802caecf1a3e90039a6265b1c4",
+  "pair": "0x53895464c524c6fdd82ad5189bf92d9b798c6a51",
+  "defaultCostBnb": 0,
+  "costPerWallet": {},
+  "actions": ["transfer_all"],
+  "dest": "0xb079101b450e2caeb6df730e3a5a069ae263fc30",
+  "tpMult": 0,
+  "slPct": 0,
+  "wallets": [
+    "0x0ABABF8eF7A083A580b4662d7e4e39Af32DBbEd1",
+    "0xd7857acc2a935570d14a1c847c9B056eC7071fF2",
+    "0x2DBf34008CEb2Cd771f573D8FF1abEc95b2D777f",
+    "0x1727420C362B89B038869423e33644bcA33bbC8d"
+  ],
+  "storeDir": "/cursor/stores/store-841e7fd0-1103-4dba-bf8f-5ddf3dd5ac67/pool-watch/burn"
+}

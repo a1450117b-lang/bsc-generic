@@ -1,0 +1,18 @@
+[Unit]
+Description=Burn BSC pool-open auto transfer (1s)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/burn-daemon
+ExecStart=/usr/bin/node %h/burn-daemon/watch-transfer.mjs --config %h/burn-daemon/config.json
+Restart=on-failure
+RestartSec=2
+Environment=PATH=%h/.local/bin:/usr/local/bin:/usr/bin:/bin
+
+# Optional: uncomment if sessions live elsewhere
+# Environment=HOME=%h
+
+[Install]
+WantedBy=default.target

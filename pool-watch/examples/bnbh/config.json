@@ -1,0 +1,22 @@
+{
+  "name": "BNBH",
+  "token": "0xE08dAb5507DF2f65C46641c5FecC6F3514c2b360",
+  "mint": "0x3651f7A305Bf37ee4c5BE03f38dE41554Bc972da",
+  "pair": "0xF9DA2fbB830452c0Ebb71E428Bb1Ed914770AcBa",
+  "defaultCostBnb": 0.02,
+  "costPerWallet": {
+    "1": 0.02,
+    "2": 0.02,
+    "3": 0.02,
+    "4": 0.02
+  },
+  "actions": [
+    "tp_principal",
+    "sl_all"
+  ],
+  "tpMult": 3,
+  "slPct": 0,
+  "url": "https://bnbholderai.meme/",
+  "storeDir": "/cursor/stores/store-6b316fcf-4b71-4205-8a24-d84141fa9db3/pool-watch/bnbh",
+  "slMult": 0.5
+}

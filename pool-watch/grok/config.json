@@ -1,0 +1,26 @@
+{
+  "name": "GROK",
+  "token": "0x59C34b8F07Aa50bd469f33C30DdB66518D0b670D",
+  "mint": "0x668ad1eac6045ebe72ad2715fc2a4226c682fd4b",
+  "pair": "0x11648fa63f8e676282b52df6d80d99d927c31625",
+  "defaultCostBnb": 0.022,
+  "costPerWallet": {
+    "1": 0.022,
+    "2": 0.022,
+    "3": 0.022,
+    "4": 0.022
+  },
+  "costNote": "今日 mint 各号 11*0.002=0.022 BNB → 550M GROK; mint=0x668ad1eac6045ebe72ad2715fc2a4226c682fd4b",
+  "actions": ["tp_principal"],
+  "tpMult": 2,
+  "slPct": 0,
+  "slMult": 0,
+  "url": "https://grokagent.fun/",
+  "wallets": [
+    "0x0ABABF8eF7A083A580b4662d7e4e39Af32DBbEd1",
+    "0xd7857acc2a935570d14a1c847c9B056eC7071fF2",
+    "0x2DBf34008CEb2Cd771f573D8FF1abEc95b2D777f",
+    "0x1727420C362B89B038869423e33644bcA33bbC8d"
+  ],
+  "storeDir": "/cursor/stores/store-841e7fd0-1103-4dba-bf8f-5ddf3dd5ac67/pool-watch/grok"
+}

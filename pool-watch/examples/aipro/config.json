@@ -1,0 +1,23 @@
+{
+  "name": "AIPRO",
+  "token": "0x577bEa203E5326Ff6E1d4594A94167111836b286",
+  "mint": "0xf87c287dfba01abfee812f5b4ed37cb9028ef424",
+  "pair": "0x9ace87f96f41aa902688362e2387fbf7b3fbb91f",
+  "defaultCostBnb": 0.044,
+  "costPerWallet": {
+    "1": 0.044,
+    "2": 0.044,
+    "3": 0.04,
+    "4": 0.044
+  },
+  "costNote": "on-chain mint: 10*0.004=0.04 BNB → 500M; w1/w2/w4 +1 share 0.004 → 550M / 0.044 BNB. mint=0xf87c287dfba01abfee812f5b4ed37cb9028ef424",
+  "actions": [
+    "tp_principal",
+    "sl_all"
+  ],
+  "tpMult": 2,
+  "slPct": 0,
+  "slMult": 0.9,
+  "url": "",
+  "storeDir": "/cursor/stores/store-6b316fcf-4b71-4205-8a24-d84141fa9db3/pool-watch/aipro"
+}

@@ -1,0 +1,72 @@
+{
+  "ok": true,
+  "slug": "burn",
+  "token": "0x7de1606230aa70802caecf1a3e90039a6265b1c4",
+  "pair": "0x53895464c524c6fdd82ad5189bf92d9b798c6a51",
+  "mint": null,
+  "decimals": 18,
+  "rpc": "https://bsc-dataseed.bnbchain.org",
+  "info": null,
+  "open": false,
+  "openRefPriceBnb": null,
+  "priceBnb": null,
+  "dropPct": null,
+  "bnbUsdt": 699.8932056913555,
+  "pairLiqWbnb": 0,
+  "actions": [
+    "transfer_all"
+  ],
+  "tpMult": 0,
+  "slPct": 0,
+  "slMult": 0,
+  "wallets": [
+    {
+      "id": 1,
+      "wallet": "0x0ABABF8eF7A083A580b4662d7e4e39Af32DBbEd1",
+      "raw": "500000000000000000000000000",
+      "human": 500000000,
+      "costBnb": 0,
+      "valueBnb": null,
+      "mult": null,
+      "sellQtyPrincipal": null
+    },
+    {
+      "id": 2,
+      "wallet": "0xd7857acc2a935570d14a1c847c9B056eC7071fF2",
+      "raw": "500000000000000000000000000",
+      "human": 500000000,
+      "costBnb": 0,
+      "valueBnb": null,
+      "mult": null,
+      "sellQtyPrincipal": null
+    },
+    {
+      "id": 3,
+      "wallet": "0x2DBf34008CEb2Cd771f573D8FF1abEc95b2D777f",
+      "raw": "0",
+      "human": 0,
+      "costBnb": 0,
+      "valueBnb": null,
+      "mult": null,
+      "sellQtyPrincipal": null
+    },
+    {
+      "id": 4,
+      "wallet": "0x1727420C362B89B038869423e33644bcA33bbC8d",
+      "raw": "500000000000000000000000000",
+      "human": 500000000,
+      "costBnb": 0,
+      "valueBnb": null,
+      "mult": null,
+      "sellQtyPrincipal": null
+    }
+  ],
+  "triggers": {
+    "open": false,
+    "tpReady": false,
+    "slReady": false,
+    "canTransfer": false
+  },
+  "elapsedMs": 6214,
+  "ts": "2026-11-02T16:59:52.509Z"
+}

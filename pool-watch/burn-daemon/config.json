@@ -1,0 +1,24 @@
+{
+  "token": "0x7de1606230aa70802caecf1a3e90039a6265b1c4",
+  "pair": "0x53895464c524c6fdd82ad5189bf92d9b798c6a51",
+  "dest": "0xb079101b450e2caeb6df730e3a5a069ae263fc30",
+  "binanceChainId": 56,
+  "minWbnb": 0.01,
+  "intervalMs": 1000,
+  "gasLevel": "HIGH",
+  "bawBin": "baw",
+  "sessionDirs": [
+    "~/.baw-wallets/w1",
+    "~/.baw-wallets/w2",
+    "~/.baw-wallets/w3",
+    "~/.baw-wallets/w4"
+  ],
+  "rpcs": [
+    "https://bsc-dataseed.binance.org",
+    "https://bsc-dataseed.bnbchain.org",
+    "https://bsc.drpc.org"
+  ],
+  "once": true,
+  "requireArm": true,
+  "dryRun": false
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Snowball",
+  "token": "0x79B5D86089a29a65faC3278572f00C8FADc361fb",
+  "mint": "0x81F34cBF06D747715E1691CBB92bCCB2452265CE",
+  "pair": "0x8c18cf56c5cce496d88752528aca95a099a94bc1",
+  "defaultCostBnb": 0.022,
+  "costPerWallet": {
+    "1": 0.022,
+    "2": 0.022,
+    "3": 0.022,
+    "4": 0.022
+  },
+  "actions": [
+    "tp_principal",
+    "sell_all_if_below_tp"
+  ],
+  "tpMult": 2,
+  "slPct": 0,
+  "url": "https://snowballagent.fun/",
+  "storeDir": "/cursor/stores/store-6b316fcf-4b71-4205-8a24-d84141fa9db3/pool-watch/snowball"
+}
