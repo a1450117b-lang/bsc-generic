@@ -9,3 +9,10 @@ session.json
 *.pem
 .env
 .env.*
+
+# bsc-mint-skill install and local run artifacts (keep empty dirs via .gitkeep)
+bsc-mint-skill/node_modules/
+bsc-mint-skill/cache/*
+!bsc-mint-skill/cache/.gitkeep
+bsc-mint-skill/runs/*.json
+bsc-mint-skill/bundles/*.json

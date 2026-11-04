@@ -31,16 +31,27 @@ baw --help
 ~/.baw-wallets/w4/session.json
 ```
 
-只查链、不签名的脚本（例如 `mint-fast/check.mjs`、`pool-watch/check.mjs`）不需要 session。
+只查链、不签名的脚本（例如 `bsc-mint-skill/precheck.mjs`、`mint-fast/check.mjs`、`pool-watch/check.mjs`）不需要 session。
 
 ## 目录
 
 | 路径 | 作用 |
 | --- | --- |
+| `bsc-mint-skill/` | 只读预检：URL 或 CA → 合约、mint 函数、单价、四号模拟、风险、历史匹配 |
 | `mint-fast/` | 打新询价、四号并行 mint、邀请火车、Mars `claimReferral` |
 | `sell-fast/` | 四号并行市价卖到 USDT（失败时回退 Pancake router） |
 | `pool-watch/` | 开池 / 倍数 / 止损检查；示例与 burn 配置。只检查，不自动卖 |
-| `skills/` | 三条流程的操作说明（Cursor skill） |
+| `skills/` | 四条流程的操作说明（Cursor skill） |
+
+### `bsc-mint-skill/`
+
+只读预检，不签名、不广播。依赖在该目录里用 `npm install` 安装（ethers v6）。
+
+```bash
+node bsc-mint-skill/precheck.mjs <url-or-CA>
+```
+
+操作说明：`skills/bsc-mint-precheck.md`。
 
 ### `mint-fast/`
 
@@ -74,13 +85,14 @@ node pool-watch/check.mjs --dir grok
 
 ### `skills/`
 
+- `bsc-mint-precheck.md`
 - `bsc-mint-fast-check.md`
 - `bsc-sell-fast.md`
 - `bsc-pool-watch.md`
 
 ## 运行日志
 
-`pool-watch/**/*.log` 和 `nohup.out` 是本机运行噪音，没有放进仓库。`.gitignore` 会继续挡住这些文件，以及 `session.json`。
+`pool-watch/**/*.log` 和 `nohup.out` 是本机运行噪音，没有放进仓库。`.gitignore` 会继续挡住这些文件，以及 `session.json`。`bsc-mint-skill/node_modules/`、`cache/` 里的缓存，以及本地 `runs/*.json`、`bundles/*.json` 也不入库；这三个目录用 `.gitkeep` 留在仓库里。
 
 ## English
 
@@ -92,10 +104,17 @@ git clone https://github.com/a1450117b-lang/bsc-generic.git
 
 | Path | Role |
 | --- | --- |
+| `bsc-mint-skill/` | Read-only precheck: URL or CA → contract, mint fn, price, 4-wallet sims, risk, history match |
 | `mint-fast/` | Quote, simulate, and parallel-mint on four local wallets |
 | `sell-fast/` | Parallel market-sell to USDT |
 | `pool-watch/` | Pool-open / take-profit / stop-loss checks, plus example configs |
-| `skills/` | Operator notes for the three flows |
+| `skills/` | Operator notes for the four flows (`skills/bsc-mint-precheck.md` and the three execution flows) |
+
+Read-only precheck:
+
+```bash
+node bsc-mint-skill/precheck.mjs <url-or-CA>
+```
 
 Wallets are **not** included: no sessions, private keys, or mnemonics. Install the signer yourself, then log in locally:
 
@@ -103,4 +122,4 @@ Wallets are **not** included: no sessions, private keys, or mnemonics. Install t
 npm install -g @binance/agentic-wallet
 ```
 
-Broadcast scripts expect `~/.baw-wallets/w1` … `w4/session.json` on the machine that runs them. Read-only checks do not.
+Broadcast scripts expect `~/.baw-wallets/w1` … `w4/session.json` on the machine that runs them. Read-only checks (`bsc-mint-skill/precheck.mjs`, `mint-fast/check.mjs`, `pool-watch/check.mjs`) do not. Install precheck deps with `npm install` inside `bsc-mint-skill/`.
